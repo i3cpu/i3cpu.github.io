@@ -19,7 +19,8 @@ var app = new Vue({
         this.city=this.city_name;
 
         context = {
-          city_name: this.city_name
+          city_name: this.city_name,
+            status:"succes"
         }
 
         this.tg.sendData(JSON.stringify(context));
@@ -27,7 +28,7 @@ var app = new Vue({
       }
     },
     watch: {
-      city_name(newCity) {
+      city(newCity) {
         this.city = newCity; 
       }
     }
