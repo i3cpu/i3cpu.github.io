@@ -23,7 +23,7 @@ var app = new Vue({
         }
 
         this.tg.sendData(JSON.stringify(data));
-        tg.close();
+        this.tg.close();
       }
     },
     watch: {
