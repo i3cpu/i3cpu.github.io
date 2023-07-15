@@ -22,7 +22,7 @@ var app = new Vue({
           city_name: this.city_name
         }
 
-        this.tg.sendData(JSON.stringify(data));
+        this.tg.sendData(JSON.stringify(context));
         this.tg.close();
       }
     },
