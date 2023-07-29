@@ -2,6 +2,7 @@ new Vue({
     el: '#main',
     data: {
       selectedImage: null,
+      tg:window.Telegram.WebApp,
     },
     methods: {
       
