@@ -22,12 +22,12 @@ body {
     flex-direction: column;
     padding: 30px;
 }
-.character img:active{
+/* .character img:active{
     cursor: pointer;
     width: 255px;
     height: 255px;
 
-}
+} */
 .character img{
     transition: all 0.3s ease;
     /* Layout Properties */
