@@ -8,7 +8,7 @@ new Vue({
     methods: {
       
       onImageClick(character) {
-        this.selectedImage = image;
+        this.selectedImage = character;
         context = {
             character: character,
             status:"succes"
