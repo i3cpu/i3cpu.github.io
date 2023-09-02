@@ -1,36 +1,43 @@
 var app = new Vue({
-    el: '.main',
-    data: {
+  el: '.main',
+  data: {
+    showChannelsBlock: true,
+    showPlayerBlock: false,
+    tg: window.Telegram.WebApp,
+    channel_name: '',
+  },
+  methods: {
 
-      showInfoBlock: true,
-      showFormBlock: false,
-      city_name:'', 
-      city:'',
-      tg:window.Telegram.WebApp,
-      
+    onImageClick(channel_name) {
+      this.showPlayerBlock = true;
+      this.showChannelsBlock = false;
+      this.channel_name = channel_name;
+      this.$nextTick(function () {
+        this.autoplay(channel_name);
+      });
     },
-    methods: {
-      to_form(){
-        this.showFormBlock = true;
-        this.showInfoBlock = false
-      },
-      close_webapp(){
 
-        this.city=this.city_name;
-
-        context = {
-          city_name: this.city_name,
-            status:"succes"
-        }
-
-        this.tg.sendData(JSON.stringify(context));
-        this.tg.close();
+    autoplay(channel_name) {
+      if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource('http://live.trkmillet.ru/millet/index.m3u8');
+        hls.attachMedia(this.$refs.video);
+        this.$refs.video.play();
+      } else if (this.$refs.video.canPlayType('application/vnd.apple.mpegurl')) {
+        this.$refs.video.src = 'http://live.trkmillet.ru/millet/index.m3u8';
+        this.$refs.video.addEventListener('loadedmetadata', function () {
+          this.$refs.video.play();
+        }.bind(this));
       }
-    },
-    watch: {
-      city(newCity) {
-        this.city = newCity; 
+    }, 
+
+    close_webapp() {
+      var context = {
+        status: "success"
       }
+
+      this.tg.sendData(JSON.stringify(context));
+      this.tg.close();
     }
-    
-  });
+  },
+});
