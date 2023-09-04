@@ -20,11 +20,11 @@ var app = new Vue({
     autoplay(channel_name) {
       if (Hls.isSupported()) {
         var hls = new Hls();
-        hls.loadSource('http://live.trkmillet.ru/millet/index.m3u8');
+        hls.loadSource('tv1.m3u8');
         hls.attachMedia(this.$refs.video);
         this.$refs.video.play();
       } else if (this.$refs.video.canPlayType('application/vnd.apple.mpegurl')) {
-        this.$refs.video.src = 'http://live.trkmillet.ru/millet/index.m3u8';
+        this.$refs.video.src = 'tv1.m3u8';
         this.$refs.video.addEventListener('loadedmetadata', function () {
           this.$refs.video.play();
         }.bind(this));
