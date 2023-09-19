@@ -19,16 +19,30 @@
   <div class="main" id="app">
 
     <div v-if="showChannelsBlock" class="channels">
-        <div class="channel" @click="onImageClick('channel 1')">
-          <img src="1.jpg" alt="rick-img">
-          <div class="channel-name">channel 1</div>
+
+        <div class="channel" @click="onImageClick('zortv')">
+          <img src="http://tv.team/images/chIcons/1794.png" alt="rick-img">
+          <div class="channel-name">Zor tv</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('milliy')">
+          <img src="http://tv.team/images/chIcons/1792.png" alt="harry-img">
+          <div class="channel-name">Milliy tv</div>
         </div>
   
-        <div class="channel" @click="onImageClick('channel 2')">
-          <img src="1.jpg" alt="harry-img">
-          <div class="channel-name">channel 2</div>
+        <div class="channel" @click="onImageClick('uzreport')">
+          <img src="http://tv.team/images/chIcons/1801.png" alt="harry-img">
+          <div class="channel-name">Uzreport tv</div>
         </div>
-    </div>
+
+        <div class="channel" @click="onImageClick('sport')">
+          <img src="http://tv.team/images/chIcons/1788.png" alt="harry-img">
+          <div class="channel-name">Sport tv</div>
+        </div>
+        
+
+    
+      </div>
   
     <div v-if="showPlayerBlock" class="player">
       <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup='{}' ref="video"></video>
