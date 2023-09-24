@@ -39,7 +39,7 @@
           <img src="http://tv.team/images/chIcons/1788.png" alt="harry-img">
           <div class="channel-name">Sport tv</div>
         </div>
-
+                     <br><br><br>
         <button @click="close_webapp">Закрыть</button>
 
     </div>
@@ -47,10 +47,11 @@
     <div v-if="showPlayerBlock" class="player">
         <h1>{{channel}}</h1>
       <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup='{}' ref="video"></video>  
-       <button @click="back">Назад</button>
+        <br><br><br>
+        <button @click="back">Назад</button>
 
     </div>
-         <br><br><br>
+
 
   </div>
 
