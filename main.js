@@ -17,7 +17,21 @@ var app = new Vue({
     onImageClick(channel_name) {
       this.showPlayerBlock = true;
       this.showChannelsBlock = false;
-      this.channel_name = channel_name;
+      if (channel_name=='zortv'){
+        this.channel="Zo'r tv"
+      }
+      else if(channel_name=='milliy'){
+        this.channel="Milliy tv"
+      }
+      else if(channel_name=='uzreport'){
+        this.channel="Uzreport tv"
+      }
+      else if(channel_name=='sport'){
+        this.channel="Sport tv"
+      }
+      else{
+        this.channel="Tv"
+      }
       this.$nextTick(function () {
         this.autoplay(channel_name);
       });
