@@ -45,15 +45,19 @@ var app = new Vue({
       }
 
 
-    }, 
+    },
+    
+      close_webapp() {
+      // var context = {
+      //   status: "success"
+      // }
+      // this.tg.sendData(JSON.stringify(context));
 
-    close_webapp() {
-      var context = {
-        status: "success"
-      }
-
-      this.tg.sendData(JSON.stringify(context));
       this.tg.close();
+    },
+    back(){
+      this.showPlayerBlock = false;
+      this.showChannelsBlock = true;
     }
   },
 });
