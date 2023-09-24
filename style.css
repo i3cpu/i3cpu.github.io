@@ -74,12 +74,16 @@ button{
     transition: all 0.3s ease;
     font-size: 20px;
 
-
     position: fixed;
     bottom: 2px;
     left: 50%; /* Положение слева на 50% ширины страницы */
     transform: translateX(-50%); /* Центрирование по горизонтали */ 
     
+}
+h1{
+    color: var(--tg-theme-text-color, #7d7d7d);
+    margin: 5px;
+    padding: 5px;
 }
 
 * {
