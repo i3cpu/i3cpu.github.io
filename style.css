@@ -82,8 +82,8 @@ button{
 }
 h1{
     color: var(--tg-theme-text-color, #7d7d7d);
-    margin: 5px;
-    padding: 5px;
+    margin: 5px auto;
+    padding: 5px auto;
 }
 
 * {
