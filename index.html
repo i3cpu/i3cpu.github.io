@@ -18,7 +18,59 @@
   
   <div class="main" id="app">
 
+
     <div v-if="showChannelsBlock" class="channels">
+
+      <div class="channel" @click="onImageClick('perviy')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/1%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB-5.svg/220px-1%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB-5.svg.png" alt="harry-img">
+        <div class="channel-name">Первый </div>
+      </div>
+
+      
+      <div class="channel" @click="onImageClick('sts')">
+        <img src="https://www.wifire.ru/uploads/tv_channels_seo/13.png" alt="harry-img">
+        <div class="channel-name">СТС</div>
+      </div>
+
+      <div class="channel" @click="onImageClick('pyatnitsa')">
+        <img src="https://yt3.googleusercontent.com/z3C5ttLxbzLy5a5NmBVcuQDmhX3h0MKsJ8oTO1sN9EaADfE18NmejaS1TwkOm0aBd8en6EcbaA=s900-c-k-c0x00ffffff-no-rj" alt="harry-img">
+        <div class="channel-name">Пятница!</div>
+      </div>
+
+      <div class="channel" @click="onImageClick('match_planeta')">
+        <img src="https://ntvplus.tv/files/image/01/17/34/e1e.png">
+        <div class="channel-name">Матч! Планета</div>
+      </div>
+
+        <div class="channel" @click="onImageClick('karusel')">
+          <img src="https://yt3.googleusercontent.com/cyFz_bfR2Y5vbvyHNiKbcQsC5h7KzNB3ZEhP0xI0fZpWvaEYbDB5qbvelje98Oik2B9FII_WmA=s900-c-k-c0x00ffffff-no-rj">
+          <div class="channel-name">Карусель</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('kinopremyera')">
+          <img src="https://etype.ru/image/catalog/TVkanaly/Kynopremera.png" alt="harry-img">
+          <div class="channel-name">Кинопремьера</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('kinoxit')">
+          <img src="https://cdn2.red-media.ru/800x466-2017-04-kinohit-1.jpg" alt="harry-img">
+          <div class="channel-name">Кинохит</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('tv1000')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Rxx09c_uwYvsCjeS5DGLHd5IqRbGtfPxB17qXOkh6Wjs3vKGWjpYbnjz4ArlFGW2vPg&usqp=CAU">
+          <div class="channel-name">TV1000</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('music_box')">
+          <img src="https://online-red.com/images/tv/Music-Box-ru.png">
+          <div class="channel-name">Music Box</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('tnt_music')">
+          <img src="https://tvnews.by/uploads/posts/2017-09/1505224118_0db86046e8ecb79cc8e1ddda7662ccc261459e48.jpg" alt="harry-img">
+          <div class="channel-name">ТНТ Music</div>
+        </div>
 
         <div class="channel" @click="onImageClick('zortv')">
           <img src="http://tv.team/images/chIcons/1794.png" alt="rick-img">
@@ -29,26 +81,37 @@
           <img src="http://tv.team/images/chIcons/1792.png" alt="harry-img">
           <div class="channel-name">Milliy tv</div>
         </div>
+
+        <div class="channel" @click="onImageClick('sevimli')">
+          <img src="http://tv.team/images/chIcons/1793.png" alt="harry-img">
+          <div class="channel-name">Sevimli Tv</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('uzbekistan24')">
+          <img src="http://tv.team/images/chIcons/1785.png" alt="harry-img">
+          <div class="channel-name">Uzbekistan 24</div>
+        </div>
   
-        <div class="channel" @click="onImageClick('rutv')">
-          <img src="http://static.g-cdn.app/streams/ru-tv.png" alt="harry-img">
-          <div class="channel-name">Ru tv</div>
+        <div class="channel" @click="onImageClick('uzreport')">
+          <img src="http://tv.team/images/chIcons/1801.png" alt="harry-img">
+          <div class="channel-name">Uzreport tv</div>
         </div>
 
         <div class="channel" @click="onImageClick('sport')">
           <img src="http://tv.team/images/chIcons/1788.png" alt="harry-img">
           <div class="channel-name">Sport tv</div>
         </div>
-                     <br><br><br>
+
+
         <button @click="close_webapp">Закрыть</button>
 
     </div>
   
     <div v-if="showPlayerBlock" class="player">
-        <h1>{{channel}}</h1>
-      <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup='{}' ref="video"></video>  
-        <br><br><br>
-        <button @click="back">Назад</button>
+      <h1>{{channel}}</h1>
+      <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup='{}' ref="video"></video>
+
+      <button @click="back">Назад</button>
 
     </div>
 
