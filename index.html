@@ -87,7 +87,12 @@
           <div class="channel-name">Sevimli Tv</div>
         </div>
 
-        <div class="channel" @click="onImageClick('uzbekistan24')">
+        <div class="channel" @click="onImageClick('my5')">
+          <img src="http://tv.team/images/chIcons/1791.png" alt="harry-img">
+          <div class="channel-name">My5</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('my5')">
           <img src="http://tv.team/images/chIcons/1785.png" alt="harry-img">
           <div class="channel-name">Uzbekistan 24</div>
         </div>
@@ -97,15 +102,68 @@
           <div class="channel-name">Uzreport tv</div>
         </div>
 
+        <div class="channel" @click="onImageClick('futboltv')">
+          <img src="http://tv.team/images/chIcons/1802.png" alt="harry-img">
+          <div class="channel-name">Futbol Tv</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('dasturxontv')">
+          <img src="http://tv.team/images/chIcons/1795.png" alt="harry-img">
+          <div class="channel-name">Dasturxon Tv</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('biztv')">
+          <img src="http://tv.team/images/chIcons/1797.png" alt="harry-img">
+          <div class="channel-name">Biz Tv</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('renessans')">
+          <img src="http://tv.team/images/chIcons/1800.png" alt="harry-img">
+          <div class="channel-name">Renessans Tv</div>
+        </div>
+
         <div class="channel" @click="onImageClick('sport')">
           <img src="http://tv.team/images/chIcons/1788.png" alt="harry-img">
           <div class="channel-name">Sport tv</div>
         </div>
+        
+        <div class="channel" @click="onImageClick('yoshlar')">
+          <img src="http://tv.team/images/chIcons/1787.png" alt="harry-img">
+          <div class="channel-name">Yoshlar</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('bolajon')">
+          <img src="http://tv.team/images/chIcons/1804.png" alt="harry-img">
+          <div class="channel-name">Bolajon</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('navo')">
+          <img src="http://tv.team/images/chIcons/1803.png" alt="harry-img">
+          <div class="channel-name">Navo</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('dunyoboylab')">
+          <img src="http://tv.team/images/chIcons/1805.png" alt="harry-img">
+          <div class="channel-name">Dunyo Bo'ylab</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('uzbekistan')">
+          <img src="http://tv.team/images/chIcons/1786.png" alt="harry-img">
+          <div class="channel-name">Uzbekistan</div>
+        </div>
 
 
+
+
+
+
+
+
+        
         <button @click="close_webapp">Закрыть</button>
-
     </div>
+    <br><br><br><br>
+
   
     <div v-if="showPlayerBlock" class="player">
       <h1>{{channel}}</h1>
@@ -113,8 +171,10 @@
 
       <button @click="back">Назад</button>
 
-    </div>
+      <br><br><br><br><br>
 
+    </div>
+    <!-- <br><br><br> -->
 
   </div>
 
