@@ -32,6 +32,13 @@ var app = new Vue({
       bolajon:'https://s05.watcher.uz/64/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250cmFjdF9pZCI6MjcwMTc3LCJsb2dpbiI6InR2LTI3MDE3NyIsInRlbXBvcmFyeSI6ZmFsc2UsImlzX29hdXRoIjpmYWxzZSwiY3JlYXRlZF90aW1lIjoxNjUwMjgzMDI3fQ.LadLj4b6plIxTGCWntQQqsQGZ3R9EsvwhaXQd1sur2g%3A15',
       navo:'https://s05.watcher.uz/65/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250cmFjdF9pZCI6MjcwMTc3LCJsb2dpbiI6InR2LTI3MDE3NyIsInRlbXBvcmFyeSI6ZmFsc2UsImlzX29hdXRoIjpmYWxzZSwiY3JlYXRlZF90aW1lIjoxNjUwMjgzMDI3fQ.LadLj4b6plIxTGCWntQQqsQGZ3R9EsvwhaXQd1sur2g%3A15',
       uzbekistan:'https://s03.watcher.uz/56/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250cmFjdF9pZCI6MjcwMTc3LCJsb2dpbiI6InR2LTI3MDE3NyIsInRlbXBvcmFyeSI6ZmFsc2UsImlzX29hdXRoIjpmYWxzZSwiY3JlYXRlZF90aW1lIjoxNjUwMjgzMDI3fQ.LadLj4b6plIxTGCWntQQqsQGZ3R9EsvwhaXQd1sur2g%3A15',
+     rentv:'https://tbs01-edge11.itdc.ge/rentv/tracks-v1a1/mono.m3u8',
+      russia_k:'https://tbs01-edge11.itdc.ge/russiaculture/tracks-v1a1/mono.m3u8',
+      oxota_i_rybalka:'https://tbs01-edge11.itdc.ge/ohotairibalka/tracks-v1a1/mono.m3u8',
+      viasat_explore:'https://tbs01-edge11.itdc.ge/viasatexp/tracks-v1a1/mono.m3u8',
+      viasat_history:'https://tbs01-edge11.itdc.ge/viasathist/tracks-v1a1/mono.m3u8',
+      viasat_sport:'https://tbs01-edge11.itdc.ge/viasatsport/tracks-v1a1/mono.m3u8'
+
 
 
 
@@ -125,6 +132,24 @@ var app = new Vue({
       }
       else if(channel_name=='uzbekistan'){
         this.channel="Uzbekistan"
+      }
+      else if(channel_name=='rentv'){
+        this.channel="Ren Tv"
+      }
+      else if(channel_name=='russia_k'){
+        this.channel="Россия К"
+      }
+      else if(channel_name=='oxota_i_rybalka'){
+        this.channel="Охота и Рыбалка"
+      }
+      else if(channel_name=='viasat_explore'){
+        this.channel="Viasat Explorer"
+      }
+      else if(channel_name=='viasat_history'){
+        this.channel="Viasat History"
+      }
+      else if(channel_name=='viasat_sport'){
+        this.channel="Viasat Sport"
       }
       else{
         this.channel="Tv"
