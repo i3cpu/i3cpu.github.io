@@ -143,7 +143,7 @@ var app = new Vue({
         this.channel="Охота и Рыбалка"
       }
       else if(channel_name=='viasat_explore'){
-        this.channel="Viasat Explorer"
+        this.channel="Viasat Explore"
       }
       else if(channel_name=='viasat_history'){
         this.channel="Viasat History"
