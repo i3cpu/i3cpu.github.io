@@ -37,7 +37,22 @@ var app = new Vue({
       oxota_i_rybalka:'https://tbs01-edge11.itdc.ge/ohotairibalka/tracks-v1a1/mono.m3u8',
       viasat_explore:'https://tbs01-edge11.itdc.ge/viasatexp/tracks-v1a1/mono.m3u8',
       viasat_history:'https://tbs01-edge11.itdc.ge/viasathist/tracks-v1a1/mono.m3u8',
-      viasat_sport:'https://tbs01-edge11.itdc.ge/viasatsport/tracks-v1a1/mono.m3u8'
+      viasat_sport:'https://tbs01-edge11.itdc.ge/viasatsport/tracks-v1a1/mono.m3u8',
+        dom_kino:'https://ucdn.beetv.kz/btv/live/hls/000000050.m3u8',
+      dom_kino_premium:'https://ucdn.beetv.kz/btv/live/hls/000002943.m3u8',
+      kinoujas:'https://tbs01-edge11.itdc.ge/kinoujas/tracks-v1a1/mono.m3u8',
+      evrokino:'https://tbs01-edge11.itdc.ge/eurokino/tracks-v1a1/mono.m3u8',
+      kuxnya_tv:'https://tbs01-edge11.itdc.ge/kuxnia/tracks-v1a1/mono.m3u8',
+      domashniy:'https://tbs01-edge11.itdc.ge/domashni/tracks-v1a1/mono.m3u8',
+      box_tv:'https://tbs01-edge11.itdc.ge/boxtv/tracks-v1a1/mono.m3u8',
+      mma_tv:'https://tbs01-edge11.itdc.ge/m1/tracks-v1a1/mono.m3u8',
+      muzika_pervogo:'https://ucdn.beetv.kz/btv/live/hls/000000204.m3u8',
+      stereoplus:'https://tbs01-edge11.itdc.ge/stereoplus/tracks-v1a1/mono.m3u8',
+
+
+
+
+
 
 
 
@@ -143,13 +158,43 @@ var app = new Vue({
         this.channel="Охота и Рыбалка"
       }
       else if(channel_name=='viasat_explore'){
-        this.channel="Viasat Explore"
+        this.channel="Viasat Explorer"
       }
       else if(channel_name=='viasat_history'){
         this.channel="Viasat History"
       }
       else if(channel_name=='viasat_sport'){
         this.channel="Viasat Sport"
+      }
+      else if(channel_name=='dom_kino'){
+        this.channel="Дом кино"
+      }
+      else if(channel_name=='kinoujas'){
+        this.channel="Киноужас"
+      }
+      else if(channel_name=='dom_kino_premium'){
+        this.channel="Дом кино премиум"
+      }
+      else if(channel_name=='evrokino'){
+        this.channel="Еврокино"
+      }
+      else if(channel_name=='kuxnya_tv'){
+        this.channel="Кухня Тв"
+      }
+      else if(channel_name=='domashniy'){
+        this.channel="Домашний"
+      }
+      else if(channel_name=='box_tv'){
+        this.channel="Бокс Тв"
+      }
+      else if(channel_name=='mma_tv'){
+        this.channel="MMA-TV"
+      }
+      else if(channel_name=='muzika_pervogo'){
+        this.channel="Музика Первого"
+      }
+      else if(channel_name=='stereoplus'){
+        this.channel="Stereoplus"
       }
       else{
         this.channel="Tv"
