@@ -47,6 +47,11 @@
           <div class="channel-name">Охота и Рыбалка</div>
         </div>
 
+        <div class="channel" @click="onImageClick('viasat_sport')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Viasat_Sport.jpg" alt="harry-img">
+          <div class="channel-name">Viasat Sport</div>
+        </div>
+
         <div class="channel" @click="onImageClick('viasat_explore')">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSkSwoMjsLm6KoXsECng_HkeODA-3ToLsong4JSdLcThrzycn4DpZA-giQluApPFlRFHE&usqp=CAU" alt="harry-img">
           <div class="channel-name">Viasat Explore</div>
@@ -55,11 +60,6 @@
         <div class="channel" @click="onImageClick('viasat_history')">
           <img src="https://таврида-телеком.рф/wp-content/uploads/2021/12/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_viber_2021-12-17_18-59-21-156.png" alt="harry-img">
           <div class="channel-name">Viasat History</div>
-        </div>
-
-        <div class="channel" @click="onImageClick('viasat_sport')">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Viasat_Sport.jpg" alt="harry-img">
-          <div class="channel-name">Viasat Sport</div>
         </div>
 
       <div class="channel" @click="onImageClick('pyatnitsa')">
@@ -92,6 +92,36 @@
           <div class="channel-name">TV1000</div>
         </div>
 
+               <div class="channel" @click="onImageClick('dom_kino')">
+          <img src="https://publishernews.ru/images/PressReleases/press_r_D79A0B0E-8344-41E5-82D4-CCC6EC66832D.jpg" alt="harry-img">
+          <div class="channel-name">Дом кино</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('kinoujas')">
+          <img src="https://nls.kz/api/v1/images/get-by-key?key=kinouzhas" alt="harry-img">
+          <div class="channel-name">Киноужас</div>
+        </div>
+        
+        <div class="channel" @click="onImageClick('dom_kino_premium')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkC4OGJfwrd6j8dOMVG_GbnSFL5WDCvTZL3Ct-epZ9MVuTk-2SbAo8ZDazPR4h1CdEIKs&usqp=CAU" alt="harry-img">
+          <div class="channel-name">Дом кино премиум</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('evrokino')">
+          <img src="https://picon.pp.ua/eurokino.png" alt="harry-img">
+          <div class="channel-name">Еврокино</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('kuxnya_tv')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYMe2TpgZpjcZO2tYqMplO48MuOS99bTSDJsy3YdJt8MePVp7BvTXaU2B5nL0rNRGjTWs&usqp=CAU" alt="harry-img">
+          <div class="channel-name">Кухня Тв</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('domashniy')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domashniy_tv_logo.svg/886px-Domashniy_tv_logo.svg.png" alt="harry-img">
+          <div class="channel-name">Домашний</div>
+        </div>
+
         <div class="channel" @click="onImageClick('music_box')">
           <img src="https://online-red.com/images/tv/Music-Box-ru.png">
           <div class="channel-name">Music Box</div>
@@ -102,14 +132,34 @@
           <div class="channel-name">ТНТ Music</div>
         </div>
 
+        <div class="channel" @click="onImageClick('muzika_pervogo')">
+          <img src="https://static.wikia.nocookie.net/tvpedia/images/5/57/%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0_%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE_%282006%29.svg/revision/latest/scale-to-width-down/250?cb=20210309183631&path-prefix=ru" alt="harry-img">
+          <div class="channel-name">Музыка Первого</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('stereoplus')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbw7EhMg3fQMxEgltNk-7mDXMj14XJdAWCvpCozrJ18hYzyV9euywQG5MI_6WCwmoeVQ&usqp=CAU" alt="harry-img">
+          <div class="channel-name">Stereoplus</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('box_tv')">
+          <img src="https://www.red-media.ru/wp-content/uploads/2018/12/Boks-TV.png" alt="harry-img">
+          <div class="channel-name">Бокс Тв</div>
+        </div>
+
+        <div class="channel" @click="onImageClick('mma_tv')">
+          <img src="https://static.wikia.nocookie.net/tvpedia/images/2/22/M-1_GLOBAL_%282018%29.png/revision/latest?cb=20190614180143&path-prefix=ru" alt="harry-img">
+          <div class="channel-name">MMA-TV</div>
+        </div>
+
         <div class="channel" @click="onImageClick('zortv')">
           <img src="https://tv.team/images/chIcons/1794.png" alt="rick-img">
-          <div class="channel-name">Zor tv</div>
+          <div class="channel-name">Zor Tv</div>
         </div>
 
         <div class="channel" @click="onImageClick('milliy')">
           <img src="https://tv.team/images/chIcons/1792.png" alt="harry-img">
-          <div class="channel-name">Milliy tv</div>
+          <div class="channel-name">Milliy Tv</div>
         </div>
 
         <div class="channel" @click="onImageClick('sevimli')">
@@ -129,7 +179,7 @@
   
         <div class="channel" @click="onImageClick('uzreport')">
           <img src="https://tv.team/images/chIcons/1801.png" alt="harry-img">
-          <div class="channel-name">Uzreport tv</div>
+          <div class="channel-name">Uzreport Tv</div>
         </div>
 
         <div class="channel" @click="onImageClick('futboltv')">
