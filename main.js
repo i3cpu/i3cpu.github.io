@@ -191,7 +191,7 @@ var app = new Vue({
         this.channel="MMA-TV"
       }
       else if(channel_name=='muzika_pervogo'){
-        this.channel="Музика Первого"
+        this.channel="Музыка Первого"
       }
       else if(channel_name=='stereoplus'){
         this.channel="Stereoplus"
