@@ -48,6 +48,10 @@ var app = new Vue({
       mma_tv:'https://tbs01-edge11.itdc.ge/m1/tracks-v1a1/mono.m3u8',
       muzika_pervogo:'https://ucdn.beetv.kz/btv/live/hls/000000204.m3u8',
       stereoplus:'https://tbs01-edge11.itdc.ge/stereoplus/tracks-v1a1/mono.m3u8',
+        tnt:'https://ucdn.beetv.kz/btv/live/hls/000001480.m3u8',
+        tnt_4:'https://ucdn.beetv.kz/btv/live/hls/000002926.m3u8',
+
+
 
 
 
@@ -195,6 +199,12 @@ var app = new Vue({
       }
       else if(channel_name=='stereoplus'){
         this.channel="Stereoplus"
+      }
+      else if(channel_name=='tnt'){
+        this.channel="TNT"
+      }
+      else if(channel_name=='tnt_4'){
+        this.channel="TNT4"
       }
       else{
         this.channel="Tv"
