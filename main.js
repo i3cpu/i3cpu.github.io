@@ -63,6 +63,11 @@ var app = new Vue({
 
     }
   },
+  mounted:function(){
+    if (this.tg.isExpanded == false){
+      this.tg.expand()
+    }
+  },
   methods: {
 
     onImageClick(channel_name) {
