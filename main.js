@@ -49,7 +49,9 @@ var app = new Vue({
       muzika_pervogo:'https://ucdn.beetv.kz/btv/live/hls/000000204.m3u8',
       stereoplus:'https://tbs01-edge11.itdc.ge/stereoplus/tracks-v1a1/mono.m3u8',
         tnt:'https://ucdn.beetv.kz/btv/live/hls/000001480.m3u8',
-        tnt_4:'https://ucdn.beetv.kz/btv/live/hls/000002926.m3u8',
+      tnt_4:'https://ucdn.beetv.kz/btv/live/hls/000002926.m3u8',
+        setanta_s1:'https://ucdn.beetv.kz/btv/live/hls/000004498.m3u8',
+      setanta_s2:'https://ucdn.beetv.kz/btv/live/hls/000004499.m3u8',
 
 
 
@@ -210,6 +212,12 @@ var app = new Vue({
       }
       else if(channel_name=='tnt_4'){
         this.channel="TNT4"
+      }
+      else if(channel_name=='setanta_s1'){
+        this.channel="Setanta Sports 1"
+      }
+      else if(channel_name=='setanta_s2'){
+        this.channel="Setanta Sports 2"
       }
       else{
         this.channel="Tv"
