@@ -240,6 +240,7 @@ var app = new Vue({
           hls.loadSource(streamUrl);
           hls.attachMedia(this.$refs.video);
           this.$refs.video.play();
+            this.$refs.video.requestFullscreen();
         } else if (this.$refs.video.canPlayType('application/vnd.apple.mpegurl')) {
           this.$refs.video.src = streamUrl;
           this.$refs.video.addEventListener('loadedmetadata', function () {
