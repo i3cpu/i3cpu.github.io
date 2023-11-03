@@ -5,7 +5,7 @@
 
     <script  src="https://vjs.zencdn.net/8.5.2/video.min.js"></script> -->
 
-    <title>IPTV плейлист</title>
+    <title>Mjtv</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -22,14 +22,15 @@
     <div v-if="showChannelsBlock" class="channels">
 
 
-
-
-        <div class="channel" @click="onImageClick('viasat_sport')">
-          <img src="https://picon.pp.ua/viasat-sport.png" alt="harry-img" class="channel-img">
-          <div class="channel-name">Viasat Sport</div>
+        <div class="channel" @click="onImageClick('setanta_s1')">
+          <img src="https://picon.pp.ua/setanta1-kz.png" alt="harry-img" class="channel-img">
+          <div class="channel-name">Setanta 1</div>
         </div>
 
-
+        <div class="channel" @click="onImageClick('setanta_s2')">
+          <img src="https://picon.pp.ua/setanta2-kz.png" alt="harry-img" class="channel-img">
+          <div class="channel-name">Setanta 2</div>
+        </div>
 
         <div class="channel" @click="onImageClick('match_planeta')">
           <img src="https://picon.pp.ua/match-planeta.png" class="channel-img">
@@ -46,31 +47,23 @@
           <div class="channel-name">Eurosport 2</div>
         </div>
 
+        <div class="channel" @click="onImageClick('sport')">
+          <img src="https://tv.team/images/chIcons/1788.png" alt="harry-img" class="channel-img">
+          <div class="channel-name">Sport tv</div>
+        </div>
+
+
+        <div class="channel" @click="onImageClick('viasat_sport')">
+          <img src="https://picon.pp.ua/viasat-sport.png" alt="harry-img" class="channel-img">
+          <div class="channel-name">Viasat Sport</div>
+        </div>
+
 
         <div class="channel" @click="onImageClick('box_tv')">
           <img src="https://www.red-media.ru/wp-content/uploads/2018/12/Boks-TV.png" alt="harry-img" class="channel-img">
           <div class="channel-name">Бокс Тв</div>
         </div>
-
-
-
-        <div class="channel" @click="onImageClick('setanta_s1')">
-          <img src="https://picon.pp.ua/setanta1-kz.png" alt="harry-img" class="channel-img">
-          <div class="channel-name">Setanta Sports 1</div>
-        </div>
-
-        <div class="channel" @click="onImageClick('setanta_s2')">
-          <img src="https://picon.pp.ua/setanta2-kz.png" alt="harry-img" class="channel-img">
-          <div class="channel-name">Setanta Sports 2</div>
-        </div>
-
         
-
-
-        <div class="channel" @click="onImageClick('uzreport')">
-          <img src="https://tv.team/images/chIcons/1801.png" alt="harry-img" class="channel-img">
-          <div class="channel-name">Uzreport Tv</div>
-        </div>
 
         <!-- <div class="channel" @click="onImageClick('futboltv')">
           <img src="https://tv.team/images/chIcons/1802.png" alt="harry-img" class="channel-img">
