@@ -271,7 +271,7 @@ var app = new Vue({
       });
     },
     onLockedImageClick(channel){
-      this.tg.showAlert("Купи подписку черт")
+      this.tg.showAlert("Чтобы смотреть этот канал, вы должны иметь подписку ")
     },
 
     autoplay(channel_name) {
