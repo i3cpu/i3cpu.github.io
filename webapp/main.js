@@ -26,7 +26,7 @@ var app = new Vue({
     send_data(){
   
         context = {
-            first_name: this.city_name,
+            first_name: this.first_name,
             adress: this.adress,
             phone:this.phone,
             date:this.date,
