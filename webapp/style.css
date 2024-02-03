@@ -92,6 +92,7 @@ input {
     border: 2px solid rgb(202, 202, 202);
     border-radius: 5px;
     background-color: white;
+    color: #222;
     
   }
   
@@ -110,6 +111,7 @@ textarea{
     border: 2px solid rgb(202, 202, 202);
     border-radius: 5px;
     background-color: white;
+    color: #222;
 }
 textarea:focus{
     outline: none;
