@@ -91,8 +91,6 @@ input {
     padding-bottom: 10px;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 5px;
-    background-color: white;
-    color: #222;
     
   }
   
@@ -110,7 +108,6 @@ textarea{
     padding: 5px;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 5px;
-    background-color: white;
     color: #222;
 }
 textarea:focus{
