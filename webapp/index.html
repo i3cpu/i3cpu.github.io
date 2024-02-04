@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+</head>
+<body>
+    <!-- <div class="header">
+        <h1>Weather</h1>
+    </div> -->
+    <div class="main">
+        
+        <div v-if="showInfoBlock" class="info-block">
+            <div class="img-block">
+                <img src="1.jpg" alt="logo-img" id="logo-img">
+            </div>
+            <button @click="to_form">Оставить заявку</button>
+            <button @click="close_webapp"  style="margin-bottom:10px; margin-top: 10px;">Закрыть</button>
+
+        </div>
+
+        <div v-if="showFormBlock" class="form-block">
+            
+            <form action="">
+                <input v-model="first_name" type="text" placeholder="Имя">
+                
+                <input v-model="adress" type="text" placeholder="Аддрес">
+            
+                <input v-model="phone" type="text" placeholder="Телефон">
+                
+                <input v-model="tarif" type="text" placeholder="Тариф">
+
+                <input v-model="date" type="datetime-local" placeholder="Дата подключения">
+                
+                <textarea v-model="comments" name="Замечания" id="" cols="22" rows="5" placeholder="Замечания"></textarea>
+                <br>
+                <button @click="send_data" >Отправить</button>
+            </form>
+            <button @click="close_webapp"  style="margin-bottom:10px; margin-top: 10px;">Закрыть</button>
+            
+            
+        </div>
+    </div>
+    
+<!--     
+    <div class="footer"></div> -->
+
+    
+    
+  <script src='main.js'></script>
+
+</body>
+</html>
